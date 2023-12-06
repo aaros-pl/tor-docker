@@ -2,8 +2,6 @@ FROM ubuntu:focal
 
 RUN apt update && apt install -y tor
 
-RUN echo -e "SocksPort 0.0.0.0:9050\nControlPort 0.0.0.0:9051\nDataDirectory /var/lib/tor" | sudo tee /etc/tor/torrc && sudo tor -f /etc/tor/torrc
-
 # COPY torrc /etc/tor/torrc
 # RUN chown -R tor /etc/tor
 
