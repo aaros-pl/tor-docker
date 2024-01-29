@@ -1,8 +1,8 @@
 name: Docker-v2-onion
 
 on:
-  schedule:
-    - cron: '44 2 * * *'
+#  schedule:
+#    - cron: '44 2 * * *'
   push:
     branches: [ "master" ]
     tags: [ 'v*.*.*' ]
